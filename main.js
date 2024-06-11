@@ -5,6 +5,7 @@ const myName = document.querySelector(
 let i = 0;
 const interval = setInterval(function () {
   console.log(i);
+  document.querySelector(`#row-row_${i} > div > div`).scrollIntoView();
   if (
     document.querySelector(
       `#row-row_${i} > div > div > div:nth-child(4) > div > div`,
